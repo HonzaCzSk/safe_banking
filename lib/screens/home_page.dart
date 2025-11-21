@@ -33,7 +33,16 @@ class HomePage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           mainAxisSize: MainAxisSize.min,
           children: [
-            const SizedBox(height: 32),
+            const SizedBox(height: 24),
+            Center(
+              child: Image.asset(
+                'assets/images/logo.png',
+                width: 140,
+                height: 140,
+                fit: BoxFit.contain,
+              ),
+            ),
+            const SizedBox(height: 12),
             const Text(
               'Vítejte v Safe Banking',
               textAlign: TextAlign.center,
